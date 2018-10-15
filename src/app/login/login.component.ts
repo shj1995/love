@@ -5,6 +5,7 @@ import {
   FormGroup,
   Validators
 } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login',
@@ -19,10 +20,10 @@ export class LoginComponent implements OnInit {
       this.validateForm.controls[ i ].markAsDirty();
       this.validateForm.controls[ i ].updateValueAndValidity();
     }
-    this.router.navigate(['/heroes']);
+    this.router.navigate(['/workbench']);
   }
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private router: Router) {
   }
 
   ngOnInit(): void {
