@@ -1,0 +1,23 @@
+#header{
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    .content{
+        width: 1170px;
+        margin: 0px auto;
+        .logo{
+            width: 165px;
+            float: left;
+            padding: 12px
+        }
+        .nav{
+            width: 475px;
+            float: right;
+        }
+        li{
+            float: left;
+            width: 100px;
+            line-height: 75px;
+        }
+    }    
+}

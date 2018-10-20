@@ -1,0 +1,15 @@
+<div id="photo" class="index_item">
+  <div class="title">
+    <h2>第三块内容</h2>
+    <p>内容简单描述</p>
+  </div>
+  <div class="content">
+    <owl-carousel #owlElement [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+      <div class="item" *ngFor="let image of mySlideImages;let i = index">
+       <div>
+         <img class="photo" src={{image}}/>
+       </div>
+      </div>
+     </owl-carousel>
+  </div>
+</div>

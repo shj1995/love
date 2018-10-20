@@ -17,9 +17,16 @@ import { IndexComponent } from './index/index.component';
 import { WorkbenchComponent } from './workbench/workbench.component';
 import { UserMgrComponent } from './workbench/user-mgr/user-mgr.component';
 import { LawyerMgrComponent } from './workbench/lawyer-mgr/lawyer-mgr.component';
+import { HeaderComponent } from './index/header/header.component';
+import { AboutComponent } from './index/about/about.component';
+import { RecordComponent } from './index/record/record.component';
+import { PhotoComponent } from './index/photo/photo.component';
+import { CommentComponent } from './index/comment/comment.component';
 registerLocaleData(zh);
 
 
+import { OwlModule } from 'ngx-owl-carousel';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   
@@ -30,6 +37,12 @@ registerLocaleData(zh);
     WorkbenchComponent,
     UserMgrComponent,
     LawyerMgrComponent,
+    HeaderComponent,
+    AboutComponent,
+    RecordComponent,
+    PhotoComponent,
+    CommentComponent,
+    TestComponent
 
   ],
   imports: [
@@ -41,7 +54,9 @@ registerLocaleData(zh);
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OwlModule,
+    
   ],
   bootstrap: [AppComponent],
   /** 配置 ng-zorro-antd 国际化 **/

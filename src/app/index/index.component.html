@@ -1,3 +1,10 @@
-<p>
-  index works!xxx
-</p>
+<app-header></app-header>
+<app-about></app-about>
+<app-record></app-record>
+<app-photo></app-photo>
+<app-comment></app-comment>
+<nz-back-top [nzTemplate]="tpl" [nzVisibilityHeight]="100" (nzOnClick)="notify()">
+  <ng-template #tpl>
+    <div class="ant-back-top-inner"> ♥ </div>
+  </ng-template>
+</nz-back-top>
