@@ -17,3 +17,13 @@
         margin: 16px;
       }
     
+      .nav{
+        min-height: -moz-calc(100vh - 32px);
+        min-height: -webkit-calc(100vh - 32px);
+        min-height: calc(100vh - 32px - 32px);
+      }
+      .content{
+        min-height:-moz-calc(100vh - 64px -  70px - 53px); 
+        min-height:-webkit-calc(100vh - 64px -  70px - 53px); 
+        min-height: calc(100vh - 64px - 70px - 53px);
+      }
