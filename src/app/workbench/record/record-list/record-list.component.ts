@@ -4,6 +4,7 @@ import {
   FormControl,
   FormGroup
 } from '@angular/forms';
+import { Record } from '../../../model/record';
 
 @Component({
   selector: 'app-workbench/record/record-list',
@@ -15,6 +16,8 @@ export class RecordListComponent implements OnInit {
   validateForm: FormGroup;
   controlArray = [];
   isCollapse = true;
+
+  private recordList:Record[];
 
   toggleCollapse(): void {
     this.isCollapse = !this.isCollapse;
@@ -31,6 +34,7 @@ export class RecordListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.recordList=[{id:'123',content:'这是内容',title:'这是标题',date:new Date()}];
     this.validateForm = this.fb.group({});
     for (let i = 0; i < 10; i++) {
       this.controlArray.push({ index: i, show: i < 6 });

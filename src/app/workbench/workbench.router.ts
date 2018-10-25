@@ -16,7 +16,7 @@ export const workbenchRouter = [
                 component:PhotoListComponent
             },
             {
-                path:'recorod',
+                path:'record',
                 redirectTo:'record/list',
                 pathMatch: 'full'
             },
