@@ -26,7 +26,6 @@ registerLocaleData(zh);
 
 
 import { OwlModule } from 'ngx-owl-carousel';
-import { TestComponent } from './test/test.component';
 
 @NgModule({
   
@@ -41,8 +40,7 @@ import { TestComponent } from './test/test.component';
     AboutComponent,
     RecordComponent,
     PhotoComponent,
-    CommentComponent,
-    TestComponent
+    CommentComponent
 
   ],
   imports: [
