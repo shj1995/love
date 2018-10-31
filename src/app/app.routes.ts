@@ -1,27 +1,26 @@
 import { LoginComponent } from "./login/login.component";
 import { IndexComponent } from "./index/index.component";
-import { WorkbenchComponent } from "./workbench/workbench.component";
 
-export const appRoutes=[
+export const appRoutes = [
     {
-        path:'index',
-        component:IndexComponent       
+        path: 'index',
+        component: IndexComponent
     },
     {
-        path:'login',
-        component:LoginComponent       
+        path: 'login',
+        component: LoginComponent
     },
     {
-        path:'workbench',
-        component:WorkbenchComponent       
+        path: 'workbench',
+        loadChildren:'./workbench/workbench.module#WorkbenchModule'
     },
     {
-        path:'',
-        redirectTo:'/index',
-        pathMatch:'full'
+        path: '',
+        redirectTo: '/login',
+        pathMatch: 'full'
     },
     {
-        path:'**',
-        component:IndexComponent       
+        path: '**',
+        component: LoginComponent
     }
 ]
