@@ -16,7 +16,7 @@ export const appRoutes = [
     },
     {
         path: '',
-        redirectTo: '/login',
+        redirectTo: '/index',
         pathMatch: 'full'
     },
     {
