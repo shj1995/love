@@ -17,7 +17,7 @@ export class RecordListComponent implements OnInit {
   controlArray = [];
   isCollapse = true;
 
-  private recordList:Record[];
+  private recordList:any[];
 
   toggleCollapse(): void {
     this.isCollapse = !this.isCollapse;

@@ -1,4 +1,4 @@
-import { AbstractEntity } from './AbstractEntity';
+import { AbstractEntity } from './abstractEntity';
 
 export class Record extends AbstractEntity {
     private title: string;
