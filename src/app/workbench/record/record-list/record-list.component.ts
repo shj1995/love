@@ -16,8 +16,9 @@ export class RecordListComponent implements OnInit {
   validateForm: FormGroup;
   controlArray = [];
   isCollapse = true;
+  dataSet = [];
 
-  private recordList:any[];
+  recordList:any[];
 
   toggleCollapse(): void {
     this.isCollapse = !this.isCollapse;

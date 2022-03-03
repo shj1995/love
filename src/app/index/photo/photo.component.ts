@@ -19,7 +19,7 @@ export class PhotoComponent implements OnInit {
   constructor(private ref: ChangeDetectorRef) {
 
     this.timer = setInterval(() => {
-      console.log(this.owlElement);
+      // console.log(this.owlElement);
       this.owlElement.next([200]);
 
     }, 1000)

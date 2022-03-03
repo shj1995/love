@@ -4,7 +4,7 @@
     <p>美好的瞬间，要记录下来 ^_^</p>
   </div>
   <div class="content">
-    <owl-carousel #owlElement [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+    <owl-carousel #owlElement [options]="mySlideOptions" [items]="mySlideImages" [carouselClasses]="['owl-theme', 'sliding']" >
       <div class="item" *ngFor="let image of mySlideImages;let i = index">
        <div>
          <img class="photo" src={{image}}/>
