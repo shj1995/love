@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
 
-// import "./assets/js/owl.carousel.min.js";
+import "../../../assets/js/owl.carousel.min.js";
 import { OwlCarousel } from 'ngx-owl-carousel';
 
 @Component({
@@ -12,7 +12,7 @@ export class PhotoComponent implements OnInit {
 
   @ViewChild('owlElement') owlElement: OwlCarousel;
 
-  mySlideImages = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].map((i) => `./assets/images/${i}.jpg`);
+  mySlideImages = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].map((i) => `/assets/images/${i}.jpg`);
   mySlideOptions = { items: 5, dots: true, nav: true };
 
   private timer;

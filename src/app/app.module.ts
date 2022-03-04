@@ -23,6 +23,7 @@ registerLocaleData(zh);
 
 
 import { OwlModule } from 'ngx-owl-carousel';
+import { FooterComponent } from './index/footer/footer.component';
 
 @NgModule({
 
@@ -34,7 +35,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     AboutComponent,
     RecordComponent,
     PhotoComponent,
-    CommentComponent
+    CommentComponent,
+    FooterComponent
 
   ],
   imports: [
